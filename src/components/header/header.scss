@@ -1,0 +1,8 @@
+@import "node_modules/inuitcss/settings/settings.core";
+
+nav.header {
+  padding-top: $inuit-global-spacing-unit;
+  .logo {
+    width: 160px;
+  }
+}

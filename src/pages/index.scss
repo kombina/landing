@@ -1,0 +1,17 @@
+.main-section {
+  .curved-text{
+    -ms-transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+
+    > h1 {
+      margin: 0;
+      font-size: 800%;
+    }
+  }
+
+  .second-line {
+    white-space: pre;
+    float: right;
+  }
+}
