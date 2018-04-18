@@ -1,7 +1,147 @@
-div.center {
-    text-align: center;
+@font-face {
+  font-family: 'Phosphate';
+  src:  url('Phosphate.ttc')  format('truetype');
 }
-.center-logo {
-    width: 800px;
-    height: 600px;
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #27aae1;
+  font-family: 'Phosphate', Arial, sans-serif;
+  max-width: 1200px;
+}
+
+.container {
+  display: flex;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.content-center {
+  justify-content: center;
+}
+
+.self-center {
+  align-self: center;
+}
+
+.self-right {
+  align-self: flex-end;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.flex {
+  flex: 1;
+}
+
+.title {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.subtitle-row {
+  margin-top: -40px;
+  flex-wrap: wrap;
+}
+
+img.phone {
+  float: right;
+  margin-top: -30px;
+}
+
+img.kombi {
+  max-width: 100%;
+}
+
+@media (max-width: 575px) {
+  body {
+    justify-content: start;
+  }
+  .subtitle-row {
+    margin-bottom: 80px;
+  }
+  .subtitle {
+    width: 200px;
+  }
+  img.phone {
+    width: 40%;
+    padding-bottom: 20px;
+  }
+  img.kombi {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 576px) {
+  body {
+    justify-content: center;
+  }
+  .title {
+    width: 90%;
+  }
+  .subtitle {
+    width: 60%;
+  }
+  img.phone {
+    width: 50%;
+  }
+  img.kombi {
+    max-width: 90%;
+  }
+  img.phone {
+    width: 30%;
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    width: 90%;
+  }
+  .subtitle {
+    width: 60%;
+  }
+  img.phone {
+    width: 50%;
+  }
+  img.kombi {
+    max-width: 90%;
+  }
+  img.phone {
+    width: 30%;
+  }
+}
+
+@media (min-width: 992px) {
+  .title {
+    width: 70%;
+  }
+  .subtitle {
+    width: 50%;
+  }
+  img.phone {
+    width: 30%;
+  }
+  img.kombi {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .title {
+    width: 70%;
+  }
+  .subtitle {
+    width: 50%;
+  }
+  img.phone {
+    width: 30%;
+  }
 }
